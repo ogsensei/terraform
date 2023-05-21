@@ -22,3 +22,15 @@ variable "test" {
 }
 
 //Map
+variable "testmap" {
+  type = map
+  default = {
+    og = 25
+    sam = 30
+  }
+}
+
+variable "username" {
+  type = string
+  
+}

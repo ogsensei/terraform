@@ -25,3 +25,9 @@ output "test2" {
 output "test3" {
   value =  "${title(var.test[0])}"
 }
+
+//Function - lookup
+output "userage" {
+  value = "My name is ${var.username}, and my age is ${lookup(var.testmap, "${var.username}")}"
+}
+
