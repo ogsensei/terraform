@@ -1,3 +1,4 @@
+#List Variable
 variable users {
   type = list
   default = ["roy","joy","soy","loya"]
@@ -38,10 +39,10 @@ output "age" {
 }
 
 #Map Variable dynamic
-variable "userage" {
+variable "username" {
   type = string
 }
 
 output "agedynamic" {
-  value = "The age of the ${var.userage} is ${lookup(var.map,"${var.userage}")}"
+  value = "The age of the ${var.username} is ${lookup(var.map,"${var.username}")}"
 }
