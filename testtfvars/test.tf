@@ -1,5 +1,5 @@
 variable "test1" {
-  type = number
+  type = list(string)
 }
 
 variable "test" {
@@ -7,5 +7,5 @@ variable "test" {
 }
 
 output "name" {
-  value = "This is a test value ${var.test}, ${var.test1}"
+  value = "This is a test value ${var.test}, ${var.test1[0]}"
 }
