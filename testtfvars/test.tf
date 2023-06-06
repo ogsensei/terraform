@@ -1,5 +1,5 @@
 variable "test1" {
-  type = list(string)
+  type = list(number)
 }
 
 variable "test" {
